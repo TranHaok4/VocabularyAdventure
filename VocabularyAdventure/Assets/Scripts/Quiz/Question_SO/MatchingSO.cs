@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "MatchingSO", menuName = "ScriptableObject/MatchingSO")]
+//[CreateAssetMenu(fileName = "MatchingSO", menuName = "ScriptableObject/MatchingSO")]
 
-public class MatchingSO : ScriptableObject
+public class MatchingSO : QuestionSO
 {
-    [SerializeField] QuestionType questiontype;
 
     private void Awake()
     {

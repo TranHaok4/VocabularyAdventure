@@ -765,6 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3514214199578412522}
+  - component: {fileID: 2757437774814677945}
   m_Layer: 0
   m_Name: MultipleChoice
   m_TagString: Untagged
@@ -787,6 +788,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2757437774814677945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089294772924022389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32af2d645eb9d0f47b8f74bebb349760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionPanel: {fileID: 4320193668261167322}
+  answer1: {fileID: 3640762808167370419}
+  answer2: {fileID: 2701390457804782548}
+  answer3: {fileID: 9129105253406112529}
+  answer4: {fileID: 3951335383530851523}
 --- !u!1 &8412280136668381970
 GameObject:
   m_ObjectHideFlags: 0

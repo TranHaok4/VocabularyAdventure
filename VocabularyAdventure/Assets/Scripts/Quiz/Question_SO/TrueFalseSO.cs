@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-[CreateAssetMenu(fileName = "TrueFalseSO", menuName = "ScriptableObject/TrueFalseSO")]
-public class TrueFalseSO : ScriptableObject
+//[CreateAssetMenu(fileName = "TrueFalseSO", menuName = "ScriptableObject/TrueFalseSO")]
+public class TrueFalseSO :  QuestionSO
 {
-    [SerializeField] QuestionType questiontype;
 
     private void Awake()
     {

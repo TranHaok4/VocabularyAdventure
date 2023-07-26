@@ -6,7 +6,6 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "MultipleChoiceSO", menuName = "ScriptableObject/MultipleChoiceSO")]
 public class MultipleChoiceSO : QuestionSO
 {
-    [SerializeField] QuestionType questiontype;
 
     private void Awake()
     {
@@ -14,9 +13,12 @@ public class MultipleChoiceSO : QuestionSO
     }
 
     [SerializeField] string questionText;
+    public string QuestionText { get => questionText; }
 
     [SerializeField] string[] answers;
+    public string[] Answers { get => answers; }
 
     [SerializeField] int correctAnswer;
+    public int CorrectAnswer { get => correctAnswer; }
 
 }
