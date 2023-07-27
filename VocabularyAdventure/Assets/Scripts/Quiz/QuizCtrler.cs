@@ -5,4 +5,10 @@ using UnityEngine.UI;
 
 public class QuizCtrler : HaroMonobehavior
 {
+    protected void HadAnswer()
+    {
+        Destroy(this.gameObject);
+        Time.timeScale = 1;
+    }
+
 }

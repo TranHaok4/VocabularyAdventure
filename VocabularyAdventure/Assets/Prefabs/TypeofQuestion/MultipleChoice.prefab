@@ -199,7 +199,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6681423299786102703}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2757437774814677945}
+        m_TargetAssemblyTypeName: MultipleChoiceCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3640762808167370419
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +312,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 0.15471691, b: 0.15471691, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -320,7 +332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3888776281822366858}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2757437774814677945}
+        m_TargetAssemblyTypeName: MultipleChoiceCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3951335383530851523
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +465,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8162691766115278028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2757437774814677945}
+        m_TargetAssemblyTypeName: MultipleChoiceCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4320193668261167322
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3514214199578412522}
   - component: {fileID: 2757437774814677945}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MultipleChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1083,4 +1119,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2864180443889212909}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2757437774814677945}
+        m_TargetAssemblyTypeName: MultipleChoiceCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

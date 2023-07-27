@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: TrueFalseSO
   m_EditorClassIdentifier: 
   questiontype: 2
-  questionText: 
+  question_time: 0
+  question_score: 0
+  questionText: Are you gay
   correctAnswer: 0

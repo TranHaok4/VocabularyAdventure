@@ -15,7 +15,7 @@ public class MultipleChoiceSO : QuestionSO
     [SerializeField] string questionText;
     public string QuestionText { get => questionText; }
 
-    [SerializeField] string[] answers;
+    [SerializeField] string[] answers = new string[4];
     public string[] Answers { get => answers; }
 
     [SerializeField] int correctAnswer;

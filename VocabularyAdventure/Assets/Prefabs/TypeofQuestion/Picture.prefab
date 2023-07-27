@@ -275,7 +275,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8806764252480325152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2471024157540910441}
+        m_TargetAssemblyTypeName: PictureCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2552548633275053422
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6177764466093078125}
+  - component: {fileID: 2471024157540910441}
   m_Layer: 0
   m_Name: Picture
   m_TagString: Untagged
@@ -307,6 +320,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2471024157540910441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2552548633275053422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48003d8e5877d84ebc301b6b2808b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 108526439177660710}
+  answer1: {fileID: 8002584144050967934}
+  answer2: {fileID: 8715927432630411289}
+  answer3: {fileID: 2538179990965297372}
+  answer4: {fileID: 7736483794552100622}
 --- !u!1 &2969589230589728991
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,7 +773,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3229012165992072961}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2471024157540910441}
+        m_TargetAssemblyTypeName: PictureCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8002584144050967934
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +906,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7529949245922432839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2471024157540910441}
+        m_TargetAssemblyTypeName: PictureCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8715927432630411289
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,4 +1039,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 85949417904213090}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2471024157540910441}
+        m_TargetAssemblyTypeName: PictureCtrler, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

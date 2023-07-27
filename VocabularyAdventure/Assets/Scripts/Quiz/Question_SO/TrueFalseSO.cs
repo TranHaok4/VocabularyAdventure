@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-//[CreateAssetMenu(fileName = "TrueFalseSO", menuName = "ScriptableObject/TrueFalseSO")]
+[CreateAssetMenu(fileName = "TrueFalseSO", menuName = "ScriptableObject/TrueFalseSO")]
 public class TrueFalseSO :  QuestionSO
 {
 
@@ -14,7 +14,10 @@ public class TrueFalseSO :  QuestionSO
 
     }
     [SerializeField] string questionText;
+    public string QuestionText { get => questionText; }
     [SerializeField] trueOrfalse correctAnswer;
+
+    public trueOrfalse CorrectAnswer {get=> correctAnswer; }
 
 
 }

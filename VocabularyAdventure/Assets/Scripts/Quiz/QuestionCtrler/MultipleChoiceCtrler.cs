@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class MultipleChoiceCtrler : QuizCtrler
 {
@@ -13,6 +14,7 @@ public class MultipleChoiceCtrler : QuizCtrler
 
     protected string correct_Answer;
 
+    //protected string user_Answer;
     public void Set_Question(MultipleChoiceSO multiplechoice_SO)
     {
         questionPanel.GetComponentInChildren<Text>().text = multiplechoice_SO.QuestionText;
@@ -22,4 +24,25 @@ public class MultipleChoiceCtrler : QuizCtrler
         answer4.GetComponentInChildren<Text>().text = multiplechoice_SO.Answers[3];
         correct_Answer = multiplechoice_SO.Answers[multiplechoice_SO.CorrectAnswer];
     }
+
+    public void OnButtonClicked()
+    {
+        GameObject selectedObject= EventSystem.current.currentSelectedGameObject;
+        string selectedAnswer = selectedObject.GetComponentInChildren<Text>().text;
+        CheckAnswer(selectedAnswer);
+    }
+    private void CheckAnswer(string userAnswer)
+    {
+        if(userAnswer==correct_Answer)
+        {
+            Debug.Log("Ok chuan");
+        }
+        else
+        {
+            Debug.Log("chua chuan");
+        }
+        HadAnswer();
+    }
+
+
 }
