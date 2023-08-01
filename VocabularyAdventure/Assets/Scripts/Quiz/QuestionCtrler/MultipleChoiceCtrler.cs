@@ -40,6 +40,7 @@ public class MultipleChoiceCtrler : QuizCtrler
         else
         {
             Debug.Log("chua chuan");
+            IncorrecctAnswer();
         }
         HadAnswer();
     }

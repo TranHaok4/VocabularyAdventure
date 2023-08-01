@@ -65,7 +65,6 @@ public class PlayerMovement : HaroMonobehavior
         {
             isJumping = false;
             animator.SetBool("IsJumping", false);
-
         }
     }
     protected void LoadPlayerCtrl()

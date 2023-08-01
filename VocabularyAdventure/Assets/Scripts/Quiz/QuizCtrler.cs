@@ -11,4 +11,14 @@ public class QuizCtrler : HaroMonobehavior
         Time.timeScale = 1;
     }
 
+    protected void CorrectAnswer()
+    {
+
+    }
+
+    protected void IncorrecctAnswer()
+    {
+        GUIctrl.Instance.Heart_Ctrl.HadIncorrectAnswer();
+    }
+
 }

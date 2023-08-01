@@ -19,7 +19,7 @@ public class QuizManager : HaroMonobehavior
     [SerializeField] GameObject picture_prefabs;
     [SerializeField] GameObject truefalse_prefabs;
 
-
+    [SerializeField] GameObject countdown_timer;
 
     protected GameObject questionObject;
 
@@ -30,6 +30,7 @@ public class QuizManager : HaroMonobehavior
     public void Set_quetion(QuestionSO type_ofquestion)
     {
         Debug.Log(type_ofquestion.Question_Type);
+        countdown_timer.SetActive(true);
         if(type_ofquestion.Question_Type==QuestionType.multiplechoice)
         {
             questionObject = Instantiate(multipleChoice_prefabs, this.transform);
@@ -52,5 +53,10 @@ public class QuizManager : HaroMonobehavior
             questionObject = Instantiate(picture_prefabs, this.transform);
             questionObject.GetComponent<PictureCtrler>().Set_Question((PictureSO)type_ofquestion);
         }
+    }
+
+    public void TimeOut()
+    {
+        countdown_timer.SetActive(false);
     }
 }
