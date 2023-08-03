@@ -23,6 +23,17 @@ public class MultipleChoiceCtrler : QuizCtrler
         answer3.GetComponentInChildren<Text>().text = multiplechoice_SO.Answers[2];
         answer4.GetComponentInChildren<Text>().text = multiplechoice_SO.Answers[3];
         correct_Answer = multiplechoice_SO.Answers[multiplechoice_SO.CorrectAnswer];
+
+        AdjustFontSize();
+    }
+    private void AdjustFontSize()
+    {
+        int numberofQuestiontext = questionPanel.GetComponentInChildren<Text>().text.Length;
+        float panelWidthQuestionText = questionPanel.GetComponentInChildren<RectTransform>().rect.width;
+        int _fontSize = Mathf.FloorToInt(panelWidthQuestionText / (numberofQuestiontext/1.5f));
+
+        questionPanel.GetComponentInChildren<Text>().fontSize = _fontSize;
+
     }
 
     public void OnButtonClicked()

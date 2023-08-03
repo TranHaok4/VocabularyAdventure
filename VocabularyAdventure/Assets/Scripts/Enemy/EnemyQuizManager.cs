@@ -5,8 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class EnemyQuizManager : HaroMonobehavior
 {
-    [SerializeField] protected QuestionSO question_inEnemy;
+    [SerializeField] protected QuestionSO[] question_inEnemy;
     [SerializeField] BoxCollider2D quizBoxcollider;
+    [SerializeField] int numberofQuestion = 1;
 
     private bool hadTriggerPlayer = false;
 
@@ -16,7 +17,7 @@ public class EnemyQuizManager : HaroMonobehavior
         {
             hadTriggerPlayer = true;
             Time.timeScale = 0;
-            QuizManager.Instance.Set_quetion(question_inEnemy);
+            QuizManager.Instance.Set_quetion(question_inEnemy,numberofQuestion);
         }
     }
 

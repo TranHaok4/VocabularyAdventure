@@ -9,6 +9,7 @@ public class QuizCtrler : HaroMonobehavior
     {
         Destroy(this.gameObject);
         Time.timeScale = 1;
+        QuizManager.Instance.TimeOut_orHadAnswer();
     }
 
     protected void CorrectAnswer()
@@ -20,5 +21,7 @@ public class QuizCtrler : HaroMonobehavior
     {
         GUIctrl.Instance.Heart_Ctrl.HadIncorrectAnswer();
     }
+
+
 
 }

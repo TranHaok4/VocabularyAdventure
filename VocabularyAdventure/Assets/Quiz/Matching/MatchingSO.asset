@@ -15,14 +15,12 @@ MonoBehaviour:
   questiontype: 3
   question_time: 0
   question_score: 0
-  number_questions: 4
+  number_questions: 3
   q1:
   - Porn
   - Jav
   - Gay
-  - Dick
   q2:
   - Hub
   - HD
   - Les
-  - Pussy

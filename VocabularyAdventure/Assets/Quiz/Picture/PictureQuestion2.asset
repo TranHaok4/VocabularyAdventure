@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a7ecf5d2506a84cb48861752c28e2a, type: 3}
-  m_Name: MultipleChoiceSO
+  m_Script: {fileID: 11500000, guid: d39763983640d854f9259ac38ea44a4c, type: 3}
+  m_Name: PictureQuestion2
   m_EditorClassIdentifier: 
-  questiontype: 0
+  questiontype: 1
   question_time: 0
   question_score: 0
-  questionText: 'HAHA '
+  picture: {fileID: 21300000, guid: e4f13606a6cb1a948b20cc7fd1419898, type: 3}
   answers:
-  - cac
-  - lon
-  - chim
-  - cu
-  correctAnswer: 2
+  - Procrastination
+  - Commitment
+  - Indecision
+  - Disinterest
+  correctAnswer: 1

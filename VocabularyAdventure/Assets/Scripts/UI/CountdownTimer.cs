@@ -28,7 +28,7 @@ public class CountdownTimer : HaroMonobehavior
             {
                 currentTime = 0;
                 shouldCountdown = false; 
-                QuizManager.Instance.TimeOut();
+                QuizManager.Instance.TimeOut_orHadAnswer();
             }
         }
     }

@@ -23,40 +23,63 @@ public class QuizManager : HaroMonobehavior
 
     protected GameObject questionObject;
 
+    [SerializeField] bool AnswerSucces = true;
+
     protected override void Start()
     {
         base.Start();
     }
-    public void Set_quetion(QuestionSO type_ofquestion)
+    private IEnumerator ProcessQuestions(QuestionSO[] type_ofquestion, int numberofquestion)
     {
-        Debug.Log(type_ofquestion.Question_Type);
-        countdown_timer.SetActive(true);
-        if(type_ofquestion.Question_Type==QuestionType.multiplechoice)
-        {
-            questionObject = Instantiate(multipleChoice_prefabs, this.transform);
-            questionObject.GetComponent<MultipleChoiceCtrler>().Set_Question((MultipleChoiceSO)type_ofquestion);
-        }
-        else if(type_ofquestion.Question_Type == QuestionType.matching)
-        {
-            questionObject = Instantiate(matching_prefabs, this.transform);
-            questionObject.GetComponent<MatchingCtrler>().Set_Question((MatchingSO)type_ofquestion);
+        int indexQuestion = 0;
 
-        }
-        else if (type_ofquestion.Question_Type == QuestionType.truefalse)
+        while (indexQuestion < numberofquestion)
         {
-            questionObject = Instantiate(truefalse_prefabs, this.transform);
-            questionObject.GetComponent<TrueFalseCtrler>().Set_Question((TrueFalseSO)type_ofquestion);
+            Debug.Log(AnswerSucces);
 
-        }
-        else if(type_ofquestion.Question_Type == QuestionType.picture)
-        {
-            questionObject = Instantiate(picture_prefabs, this.transform);
-            questionObject.GetComponent<PictureCtrler>().Set_Question((PictureSO)type_ofquestion);
+            if (AnswerSucces)
+            {
+                AnswerSucces = false;
+                countdown_timer.SetActive(true);
+
+                Debug.Log(type_ofquestion[indexQuestion].Question_Type);
+
+                if (type_ofquestion[indexQuestion].Question_Type == QuestionType.multiplechoice)
+                {
+                    questionObject = Instantiate(multipleChoice_prefabs, transform);
+                    questionObject.GetComponent<MultipleChoiceCtrler>().Set_Question((MultipleChoiceSO)type_ofquestion[indexQuestion]);
+                }
+                else if (type_ofquestion[indexQuestion].Question_Type == QuestionType.matching)
+                {
+                    questionObject = Instantiate(matching_prefabs, transform);
+                    questionObject.GetComponent<MatchingCtrler>().Set_Question((MatchingSO)type_ofquestion[indexQuestion]);
+                }
+                else if (type_ofquestion[indexQuestion].Question_Type == QuestionType.truefalse)
+                {
+                    questionObject = Instantiate(truefalse_prefabs, transform);
+                    questionObject.GetComponent<TrueFalseCtrler>().Set_Question((TrueFalseSO)type_ofquestion[indexQuestion]);
+                }
+                else if (type_ofquestion[indexQuestion].Question_Type == QuestionType.picture)
+                {
+                    questionObject = Instantiate(picture_prefabs, transform);
+                    questionObject.GetComponent<PictureCtrler>().Set_Question((PictureSO)type_ofquestion[indexQuestion]);
+                }
+                indexQuestion++;
+            }
+
+            yield return new WaitUntil(() => AnswerSucces);
         }
     }
 
-    public void TimeOut()
+    public void Set_quetion(QuestionSO[] type_ofquestion, int numberofquestion)
+    {
+        AnswerSucces = true;
+        StartCoroutine(ProcessQuestions(type_ofquestion, numberofquestion));
+    }
+
+    public void TimeOut_orHadAnswer()
     {
         countdown_timer.SetActive(false);
+        AnswerSucces = true;
     }
 }
